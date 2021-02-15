@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="" />
+    <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/Node/fileread.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/Node/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/data/CSS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/data/HTML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/data/JavaScript" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/data/Web" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,7 +34,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.7.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.28" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -31,10 +55,33 @@
       <option name="presentableId" value="Default" />
       <updated>1613362640044</updated>
       <workItem from="1613362641170" duration="21000" />
+      <workItem from="1613365886397" duration="3338000" />
+      <workItem from="1613372812786" duration="8925000" />
+      <workItem from="1613382870484" duration="2864000" />
     </task>
+    <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
+      <created>1613385988715</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613385988715</updated>
+    </task>
+    <task id="LOCAL-00002" summary="JS 문법">
+      <created>1613386013916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613386013916</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="정적웹-&gt;동적웹" />
+    <MESSAGE value="JS 문법" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS 문법" />
   </component>
 </project>
