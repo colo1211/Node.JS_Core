@@ -2,12 +2,13 @@
 var http = require('http'); // http 모듈을 사용
 var fs = require('fs');
 var url = require('url'); // url 모듈을 사용
+var qs = require('querystring');
 
 var app = http.createServer(function(request,response){
     var _url = request.url; // /?id=CSS 등과 같이 나온다.
     var queryData = url.parse(_url,true).query; // id:'HTML', id:'CSS' , id:'JavaScript' 등과 같이 나온다(객체형식)
     var pathname = url.parse(_url,true).pathname; // pathname = '/', path='/?id=HTML
-
+    // console.log(pathname);
     if (pathname==='/') {
         if (queryData.id === undefined){ // main 페이지
             // 메인페이지에서 리스트 처리
@@ -33,7 +34,39 @@ var app = http.createServer(function(request,response){
 
     }
     }
+    // create 버튼을 눌렀을 때, 생성되는 form
+    else if(pathname === '/create'){ // create
+        fs.readdir('./data',function(error,fileName){
+            var title = 'Web - create';
+            var list = listMaker(fileName);
+            var template=templateTxt(title,list,`
+                        <form action="http://localhost:3000/create_process" method="post">
+                        <p><input type="text" name="title" placeholder="title"></p>
+                         <p>
+                         <textarea name = "description" placeholder="contents"></textarea>
+                        </p>
+                        <p><input type="submit"></p>
+                        </form>
+            `);
+            response.writeHead(200); // 성공적으로 로딩
+            response.end(template); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
+        })
+    }
+    // create
 
+    else if (pathname === '/create_process'){
+       var body = '';
+       request.on('data',function (data){ // 들어오는 정보를 계속 받는다.
+           body = body + data;
+       });
+       request.on('end',function (){ //
+           var post = qs.parse(body);
+           var title = post.title;
+           var description = post.description;
+       });
+        response.writeHead(200); // 로딩 실패
+        response.end('Success'); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
+    }
     // 이상한 URL을 입력했을 때
     else {
         response.writeHead(404); // 로딩 실패
@@ -51,9 +84,10 @@ function templateTxt(title, list, body){ // 화면에 출력할 template을 만�
         <meta charset="utf-8">
         </head>
         <body>
-        <h1><a href="/?id=Web">WEB</a></h1>
+        <h1><a href="/">Hello WEB World</a></h1>
         ${list}    
-        ${body};
+        <a href="/create">create</a>
+        ${body}
         </body>
         </html>
      `;
