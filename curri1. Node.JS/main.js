@@ -16,7 +16,7 @@ var app = http.createServer(function(request,response){
                 var title = 'WelCome';
                 var description= 'Hello Node.js';
                 var list = listMaker(fileName);
-                var template=templateTxt(title,list,`<h2>${title}</h2>${description}`);
+                var template=templateTxt(title,list,`<h2>${title}</h2>${description}`, `<a href="/create">create</a>`);
                 response.writeHead(200); // 성공적으로 로딩
                 response.end(template); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
             })
@@ -26,7 +26,13 @@ var app = http.createServer(function(request,response){
                     var list = listMaker(fileName);
                     fs.readFile(`./data/${queryData.id}`,'utf8',function(error,description){
                         var title = queryData.id;
-                        var template = templateTxt(title,list,`<h2>${title}</h2>${description}`);
+                        var template = templateTxt(title,list,`<h2>${title}</h2>${description}`,`
+                            <a href='/create'>create</a> 
+                            <a href = '/update?id=${title}'>update</a> 
+                            <form action="delete_process" method="post">
+                            <input type = 'hidden' name="id" value="${title}">
+                            <input type="submit" value="delete">
+                            </form>`);
                         response.writeHead(200); // 성공적으로 로딩
                         response.end(template); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
                     })
@@ -41,14 +47,14 @@ var app = http.createServer(function(request,response){
             var list = listMaker(fileName);
             // 목록은 그대로 남겨두고 아래의 생성창만 생성한다.
             var template=templateTxt(title,list,`
-                        <form action="http://localhost:3000/create_process" method="post">
+                        <form action="/create_process" method="post">
                         <p><input type="text" name="title" placeholder="title"></p>
                          <p>
                          <textarea name = "description" placeholder="description"></textarea>
                         </p>
-                        <p><input type="submit"></p>
+                        <p><input type="submit" value="생성"></p>
                         </form>
-            `);
+            `,'');
             response.writeHead(200); // 성공적으로 로딩
             response.end(template); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
         })
@@ -59,7 +65,7 @@ var app = http.createServer(function(request,response){
        var body = '';
        request.on('data',function (data){ // 사용자가 요청한 정보이기 때문에 request
            body = body + data; // 콜백 함수를 통해서 수신에 성공할 때마다 조각조각형태로 data 인자를 통해서 받아온다.
-           console.log(`end 이전 body: ${body}`);
+           // console.log(`end 이전 body: ${body}`);
        });
 
        // 데이터 전송이 모두 완료되면 end 콜백 함수 실행!
@@ -74,6 +80,66 @@ var app = http.createServer(function(request,response){
            })
        });
     }
+
+    // 수정
+    else if (pathname==='/update'){
+        fs.readdir('./data',function(error,fileName){
+            var list = listMaker(fileName);
+            fs.readFile(`./data/${queryData.id}`,'utf8',function(error,description){
+                var title = queryData.id;
+                var template = templateTxt(title,list,
+                    `<form action="/update_process" method="post"> 
+                        <input type="hidden" name="id" value ='${title}'> <!--수정 할 파일의 이름을 받을 수 있다.-->
+                        <p><input type="text" name="title" placeholder="title" value="${title}"></p>
+                         <p>
+                         <textarea name = "description" placeholder="description">${description}</textarea>
+                        </p>
+                        <p><input type="submit" value="수정"></p>
+                        </form>`,'');
+                response.writeHead(200); // 성공적으로 로딩
+                response.end(template); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
+            })
+        })
+    }
+    else if (pathname === '/update_process'){
+        var body = '';
+        request.on('data',function (data){ // 사용자가 요청한 정보이기 때문에 request
+            body = body + data; // 콜백 함수를 통해서 수신에 성공할 때마다 조각조각형태로 data 인자를 통해서 받아온다.
+        });
+
+        // 데이터 전송이 모두 완료되면 end 콜백 함수 실행!
+        request.on('end',function (){ //
+            var post = qs.parse(body);
+            var id = post.id;
+            var title = post.title;
+            var description = post.description;
+            //제목을 바꾸는 코드
+            fs.rename(`data/${id}`,`data/${title}`,function (error){
+                // 내용을 바꾸는 코드
+                fs.writeFile(`data/${title}`,description,'utf8',function (error){
+                    response.writeHead(302,{Location: `/?id=${title}`});
+                    response.end();
+                })
+            })
+        });
+    }
+
+    else if (pathname==='/delete_process'){
+        var body = '';
+        request.on('data',function (data){
+            body = body + data;
+        });
+        request.on('end',function (){ //
+            var post = qs.parse(body);
+            var id = post.id;
+            console.log(post);
+            fs.unlink(`data/${id}`, function(error){
+                response.writeHead(302,{Location: `/`});
+                response.end();
+            });
+        });
+    }
+
     // 이상한 URL을 입력했을 때
     else {
         response.writeHead(404); // 로딩 실패
@@ -82,7 +148,7 @@ var app = http.createServer(function(request,response){
 });
 app.listen(3000);
 
-function templateTxt(title, list, body){ // 화면에 출력할 template을 만들어 주는 함수
+function templateTxt(title, list, body,control){ // 화면에 출력할 template을 만들어 주는 함수
     return `
         <!doctype html>
         <html>
@@ -93,7 +159,8 @@ function templateTxt(title, list, body){ // 화면에 출력할 template을 만�
         <body>
         <h1><a href="/">Hello WEB World</a></h1>
         ${list}    
-        <a href="/create">create</a>
+<!--        <a href="/create">create</a> <a href = '/update'>update</a>-->
+        ${control}
         ${body}
         </body>
         </html>
