@@ -34,16 +34,17 @@ var app = http.createServer(function(request,response){
 
     }
     }
-    // create 버튼을 눌렀을 때, 생성되는 form
-    else if(pathname === '/create'){ // create
+    // create 버튼을 눌렀을 때, 생성되는 form을 띄운다.
+    else if(pathname === '/create'){ // create를 클릭 했을 때
         fs.readdir('./data',function(error,fileName){
             var title = 'Web - create';
             var list = listMaker(fileName);
+            // 목록은 그대로 남겨두고 아래의 생성창만 생성한다.
             var template=templateTxt(title,list,`
                         <form action="http://localhost:3000/create_process" method="post">
                         <p><input type="text" name="title" placeholder="title"></p>
                          <p>
-                         <textarea name = "description" placeholder="contents"></textarea>
+                         <textarea name = "description" placeholder="description"></textarea>
                         </p>
                         <p><input type="submit"></p>
                         </form>
@@ -52,20 +53,26 @@ var app = http.createServer(function(request,response){
             response.end(template); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
         })
     }
-    // create
 
+    // create에서 받아서 넘어온 URL에서의 처리
     else if (pathname === '/create_process'){
        var body = '';
-       request.on('data',function (data){ // 들어오는 정보를 계속 받는다.
-           body = body + data;
+       request.on('data',function (data){ // 사용자가 요청한 정보이기 때문에 request
+           body = body + data; // 콜백 함수를 통해서 수신에 성공할 때마다 조각조각형태로 data 인자를 통해서 받아온다.
+           console.log(`end 이전 body: ${body}`);
        });
+
+       // 데이터 전송이 모두 완료되면 end 콜백 함수 실행!
        request.on('end',function (){ //
            var post = qs.parse(body);
            var title = post.title;
            var description = post.description;
+
+           fs.writeFile(`data/${title}`,description,'utf8',function (error){
+               response.writeHead(302,{Location: `/?id=${title}`});
+               response.end();
+           })
        });
-        response.writeHead(200); // 로딩 실패
-        response.end('Success'); // 어떤 코드를 넣느냐에 따라서, 사용자에게 전송하는 데이터가 바뀐다.
     }
     // 이상한 URL을 입력했을 때
     else {
