@@ -28,9 +28,9 @@ var app = http.createServer(function(request,response){
                         var title = queryData.id;
                         var template = templateTxt(title,list,`<h2>${title}</h2>${description}`,`
                             <a href='/create'>create</a> 
-                            <a href = '/update?id=${title}'>update</a> 
+                            <a href ='/update?id=${title}'>update</a> 
                             <form action="delete_process" method="post">
-                            <input type = 'hidden' name="id" value="${title}">
+                            <input type ='hidden' name="id" value="${title}">
                             <input type="submit" value="delete">
                             </form>`);
                         response.writeHead(200); // 성공적으로 로딩
