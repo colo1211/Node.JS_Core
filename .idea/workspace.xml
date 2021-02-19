@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1. Node.JS/Syntax/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/curri1. Node.JS/Syntax/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1. Node.JS/data/CSS" beforeDir="false" afterPath="$PROJECT_DIR$/curri1. Node.JS/data/CSS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curri1. Node.JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/curri1. Node.JS/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1. Node.JS/remain.js" beforeDir="false" afterPath="$PROJECT_DIR$/curri1. Node.JS/remain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="15.7.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TIL/Node.JS_Core/Node.JS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,6 +61,8 @@
       <workItem from="1613389570804" duration="685000" />
       <workItem from="1613534210538" duration="17080000" />
       <workItem from="1613615725649" duration="6776000" />
+      <workItem from="1613647498847" duration="490000" />
+      <workItem from="1613714936426" duration="4223000" />
     </task>
     <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
       <created>1613385988715</created>
@@ -145,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613553748155</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CRUD 구현 수업용">
+      <created>1613719338790</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613719338790</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +172,7 @@
     <MESSAGE value="연습" />
     <MESSAGE value="JS 문법 간단히" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="CRUD 구현 수업용" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD 구현 수업용" />
   </component>
 </project>
