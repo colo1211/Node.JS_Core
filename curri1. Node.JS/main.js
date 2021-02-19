@@ -132,7 +132,7 @@ var app = http.createServer(function(request,response){
         request.on('end',function (){ //
             var post = qs.parse(body);
             var id = post.id;
-            console.log(post);
+            // console.log(post);
             fs.unlink(`data/${id}`, function(error){
                 response.writeHead(302,{Location: `/`});
                 response.end();
