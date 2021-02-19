@@ -32,7 +32,11 @@ var app = http.createServer(function(request,response){
                         var template = templateMaker(title, list,`<h2>${title}</h2><p>${description}</p>`,
                             `    
                                 <a href="/create">create</a> 
-                                <a href="/update">update</a>` )
+                                <a href='/update?id=${title}'>update</a>
+                                <form action="/delete_process" method="post">
+                                <input type="hidden" name ='id' value="${title}">
+                                <input type="submit" value="delete">
+                                </form>`); // 업데이트 할 내용의 제목을 띄우기 위해서 title도 같이 전송해준다.
                         response.writeHead(200);
                         response.end(template)
                     })
@@ -43,7 +47,7 @@ var app = http.createServer(function(request,response){
             var title = 'List-Create';
             var list = listMaker(fileName);
             var template = templateMaker(title, list, `
-                <form action="/process_create" method="post">
+                <form action="/create_process" method="post">
                 <p><input type="text" name="title" placeholder="title"></p>
                 <p><textarea name="description" placeholder="description"></textarea></p>
                 <p><input type="submit"></p>
@@ -51,7 +55,7 @@ var app = http.createServer(function(request,response){
             response.writeHead(200);
             response.end(template);
         })
-    }else if (pathname==='/process_create'){
+    }else if (pathname==='/create_process'){
         var body;
         request.on('data',function(data){
             body = body+data;
@@ -66,23 +70,58 @@ var app = http.createServer(function(request,response){
             })
         });
     }
+    // update form을 짜는 코드
     else if (pathname === '/update'){
         fs.readFile(`data/${queryString.id}`,`utf8`,function (error,description){
-            fs.readdir('./data',function(error , fileName){
+            // console.log(`파일명:${queryString.id},파일 내용: ${description}`);
+            fs.readdir(`data`,function(error , fileName){
                 var title = queryString.id;
                 var list = listMaker(fileName);
-                var template = templateMaker(title, list, `
-                <form action="/process_create" method="post">
-                <p><input type="text" name="title" placeholder="title" value=${title}></p>
-                <p><textarea name="description" placeholder="description">${description}</textarea></p>
+                var template = templateMaker(title, list, `<form action="/update_process" method="post">
+                <input type ='hidden' name = 'id' value="${title}">
+                <p><input type="text" name="title" placeholder="title" value='${title}'></p>
+                <p><textarea name="description" placeholder="description">'${description}'</textarea></p>
                 <p><input type="submit"></p>
-                </form>`);
+                </form>`,'');
                 response.writeHead(200);
                 response.end(template);
             })
         })
     }
-
+    //update 내용을 post 형식으로 전달받는 코드
+    else if(pathname === '/update_process'){
+        var body =``;
+        request.on('data',function(data){
+            body= body+data; // post형식으로 들어오는 데이터들을 오는대로 합친다.
+        })
+        request.on('end',function(){
+            var post= qs.parse(body);
+            var id = post.id;
+            var title = post.title;
+            var description = post.description;
+            fs.rename(`data/${id}`,`data/${title}`,function(){
+                fs.writeFile(`data/${title}`,description,'utf8',function(error){
+                    response.writeHead(302, {Location: `/?id=${title}`});
+                    response.end();
+                })
+            })
+        })
+    }else if(pathname === '/delete_process'){//링크 입력할 때, /를 반드시 명시 해줘야 한다!
+        var body =``;
+        request.on('data',function(data){
+            body += data;
+            console.log(body);
+        })
+        request.on('end',function(){
+            var post = qs.parse(body);
+            console.log(post);
+            var id = post.id;
+            fs.unlink(`data/${id}`,function(error){
+                response.writeHead(302,{Location:`/`});
+                response.end();
+            })
+        })
+    }
     else{ // 아예 이상한 URL
         response.writeHead(404);
         response.end('Not Found');
