@@ -2,12 +2,14 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 var qs= require('querystring');
+var path = require('path'); // 파일을 읽어오는 것을 무방비 하게 하는 것을 막기 위해!(readFile에서 사용). path.parse(주소).base
+var sanitizeHTML = require('sanitize-html'); // 파일의 이상한 글을 쓰는 것을 막기 위해 사용(writeFile에서 사용)
+var o = require('./lib'); // 사용할 함수에 대한 모듈을 Import 해온다.
 
 var app = http.createServer(function(request,response){
     var _url = request.url;
     var queryString = url.parse(_url,true).query;
     var pathname = url.parse(_url,true).pathname;
-    // console.log(pathname);
 
     // query는 객체 형식으로 어떤 queryString 이 입력 되었는지 파악하기 위한 API
     // pathname : /으로 들어온다.
@@ -18,18 +20,19 @@ var app = http.createServer(function(request,response){
             var title= 'Welcome';
             var description = 'Hello Node';
             fs.readdir('./data',function(error, fileName){
-                var list = listMaker(fileName);
-                var template = templateMaker(title, list,`<h2>${title}</h2><p>${description}</p>`,`<a href="/create">create</a>`
+                var list = o.listMaker(fileName);
+                var template = o.templateTxt(title, list,`<h2>${title}</h2><p>${description}</p>`,`<a href="/create">create</a>`
             );
                 response.writeHead(200);
                 response.end(template);
             })
         }else { // main 페이지가 아닌 다른 페이지
             fs.readdir(`./data`, function (error, fileName) {
-                    var list = listMaker(fileName);
-                    fs.readFile(`./data/${queryString.id}`, 'utf8', function (error, description) {
+                    var list = o.listMaker(fileName);
+                    var securityName= path.parse(queryString.id).base;
+                    fs.readFile(`data/${securityName}`, 'utf8', function (error, description) {
                         var title = queryString.id;
-                        var template = templateMaker(title, list,`<h2>${title}</h2><p>${description}</p>`,
+                        var template = o.templateTxt(title, list,`<h2>${title}</h2><p>${description}</p>`,
                             `    
                                 <a href="/create">create</a> 
                                 <a href='/update?id=${title}'>update</a>
@@ -45,13 +48,13 @@ var app = http.createServer(function(request,response){
     }else if (pathname ==='/create') {
         fs.readdir('./data',function(error , fileName){
             var title = 'List-Create';
-            var list = listMaker(fileName);
-            var template = templateMaker(title, list, `
+            var list = o.listMaker(fileName);
+            var template = o.templateTxt(title, list, `
                 <form action="/create_process" method="post">
                 <p><input type="text" name="title" placeholder="title"></p>
                 <p><textarea name="description" placeholder="description"></textarea></p>
                 <p><input type="submit"></p>
-                </form>`);
+                </form>`,'');
             response.writeHead(200);
             response.end(template);
         })
@@ -62,22 +65,22 @@ var app = http.createServer(function(request,response){
         });
         request.on('end',function (){
             var post = qs.parse(body);
-            var title = post.undefinedtitle;
-            var description = post.description;
-            fs.writeFile(`data/${title}`,description,'utf8',function(error){
-                response.writeHead(302,{Location: `/?id=${title}`});
+            var sanitizeTitle = sanitizeHTML(post.undefinedtitle);
+            var sanitizeDescription = sanitizeHTML(post.description);
+            fs.writeFile(`data/${sanitizeTitle}`,sanitizeDescription,'utf8',function(error){
+                response.writeHead(302,{Location: `/?id=${sanitizeTitle}`});
                 response.end();
             })
         });
     }
     // update form을 짜는 코드
     else if (pathname === '/update'){
-        fs.readFile(`data/${queryString.id}`,`utf8`,function (error,description){
-            // console.log(`파일명:${queryString.id},파일 내용: ${description}`);
+        var securityName= path.parse(queryString.id).base;
+        fs.readFile(`./data/${securityName}`,`utf8`,function (error,description){
             fs.readdir(`data`,function(error , fileName){
-                var title = queryString.id;
-                var list = listMaker(fileName);
-                var template = templateMaker(title, list, `<form action="/update_process" method="post">
+                var title =queryString.id;
+                var list = o.listMaker(fileName);
+                var template = o.templateTxt(title, list, `<form action="/update_process" method="post">
                 <input type ='hidden' name = 'id' value="${title}">
                 <p><input type="text" name="title" placeholder="title" value='${title}'></p>
                 <p><textarea name="description" placeholder="description">'${description}'</textarea></p>
@@ -97,11 +100,11 @@ var app = http.createServer(function(request,response){
         request.on('end',function(){
             var post= qs.parse(body);
             var id = post.id;
-            var title = post.title;
-            var description = post.description;
-            fs.rename(`data/${id}`,`data/${title}`,function(){
-                fs.writeFile(`data/${title}`,description,'utf8',function(error){
-                    response.writeHead(302, {Location: `/?id=${title}`});
+            var sanitizeTitle = sanitizeHTML(post.title);
+            var sanitizeDescription = sanitizeHTML(post.description);
+            fs.rename(`data/${id}`,`data/${sanitizeTitle}`,function(){
+                fs.writeFile(`data/${sanitizeTitle}`,sanitizeDescription,'utf8',function(error){
+                    response.writeHead(302, {Location: `/?id=${sanitizeTitle}`});
                     response.end();
                 })
             })
@@ -110,11 +113,9 @@ var app = http.createServer(function(request,response){
         var body =``;
         request.on('data',function(data){
             body += data;
-            console.log(body);
         })
         request.on('end',function(){
             var post = qs.parse(body);
-            console.log(post);
             var id = post.id;
             fs.unlink(`data/${id}`,function(error){
                 response.writeHead(302,{Location:`/`});
@@ -128,33 +129,3 @@ var app = http.createServer(function(request,response){
     }
 });
 app.listen(3000);
-
-function listMaker(fileName){
-    var list = `<ul>`;
-    var i = 0;
-    while (i < fileName.length) {
-        list = list + `<li><a href="/?id=${fileName[i]}">${fileName[i]}</a></li>`;
-        i++;
-    }
-    list = list + `</ul>`;
-    return list;
-}
-function templateMaker(title, list, body,control){
-    return `
-    <!doctype html>
-    <html>
-    <head>
-        <title>${title}</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-    <h1><a href="/">WEB</a></h1>
-    ${list}
-    ${control}
-<!--    <a href="/create">create</a> -->
-<!--    <a href="/update">update</a>-->
-    ${body}
-    </body>
-    </html>
-    `
-}
