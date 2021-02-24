@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="this,함수는 값">
+      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/reprac.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1. Node.JS/data/CSS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1. Node.JS/remain.js" beforeDir="false" afterPath="$PROJECT_DIR$/curri1. Node.JS/remain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,8 @@
       <workItem from="1613792174142" duration="3072000" />
       <workItem from="1613795280036" duration="30000" />
       <workItem from="1613902381990" duration="25000" />
+      <workItem from="1613962670418" duration="3990000" />
+      <workItem from="1614141176579" duration="4275000" />
     </task>
     <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
       <created>1613385988715</created>
