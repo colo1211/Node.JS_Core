@@ -2,46 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/curri1. Node.JS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/fileread.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/mpart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/muse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/readdir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/sample.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/CallBack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/Number.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/OOP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/comparison.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/function.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/loop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/object.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/object2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/checkbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/coding.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/JS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/attack" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/create" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/createtest3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/hi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/lib.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/main_prac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/remain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/reprac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/security.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/coding.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/data/HTML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/example.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/lib/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/fileread.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/mpart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/muse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/readdir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/password.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/Number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/array-loop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/boolean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/callback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/comparison.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/conditional.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/function2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/loop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/object2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/object3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/program1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/program2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/variable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/variable2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <workItem from="1614141176579" duration="5325000" />
       <workItem from="1614148938392" duration="1045000" />
       <workItem from="1614151508771" duration="1050000" />
-      <workItem from="1614152709183" duration="594000" />
+      <workItem from="1614152709183" duration="952000" />
     </task>
     <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
       <created>1613385988715</created>
@@ -319,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614151969360</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Curri1. Node.JS로 게시판(CRUD) 구현하기">
+      <created>1614154447067</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1614154447067</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +350,7 @@
     <MESSAGE value="게시판 구현" />
     <MESSAGE value="JS 문법 간단히" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Curri1. Node.JS로 게시판(CRUD) 구현하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="Curri1. Node.JS로 게시판(CRUD) 구현하기" />
   </component>
 </project>
