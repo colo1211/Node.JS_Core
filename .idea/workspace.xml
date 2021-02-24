@@ -2,288 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/CallBack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/Number.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/OOP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/comparison.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/loop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/object2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/sample" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/sync.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/coding.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/lib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/main_prac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/.bin/nanoid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/.bin/nanoid.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/.bin/nanoid.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/.package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/colorette/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/colorette/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/colorette/colorette.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/colorette/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/colorette/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/colorette/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/changelog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/dist/cjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/dist/umd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/deepmerge/rollup.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/foreignNames.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/foreignNames.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/foreignNames.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/index.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/index.test.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/index.test.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/lib/index.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/dom-serializer/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domelementtype/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domelementtype/lib/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domelementtype/lib/index.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domelementtype/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domelementtype/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domelementtype/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/lib/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/lib/index.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/lib/node.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/lib/node.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/lib/node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domhandler/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/helpers.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/helpers.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/index.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/legacy.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/legacy.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/legacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/manipulation.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/manipulation.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/manipulation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/querying.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/querying.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/querying.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/stringify.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/stringify.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/stringify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/tagtypes.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/tagtypes.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/tagtypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/traversal.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/traversal.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/lib/traversal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/domutils/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/decode.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/decode.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/decode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/decode_codepoint.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/decode_codepoint.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/decode_codepoint.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/encode.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/encode.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/encode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/index.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/maps/decode.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/maps/entities.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/maps/legacy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/lib/maps/xml.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/entities/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/escape-string-regexp/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/escape-string-regexp/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/escape-string-regexp/license" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/escape-string-regexp/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/escape-string-regexp/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/CollectingHandler.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/CollectingHandler.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/CollectingHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/FeedHandler.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/FeedHandler.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/FeedHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/MultiplexHandler.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/MultiplexHandler.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/MultiplexHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/Parser.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/Parser.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/Parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/Tokenizer.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/Tokenizer.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/Tokenizer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/WritableStream.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/WritableStream.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/WritableStream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/index.d.ts.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/htmlparser2/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/is-plain-object/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/is-plain-object/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/is-plain-object/dist/is-plain-object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/is-plain-object/dist/is-plain-object.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/is-plain-object/is-plain-object.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/is-plain-object/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/dist/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/dist/index.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/dist/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/full/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/full/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/full/index.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/full/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/json/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/json/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/json/index.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/json/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/license" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/lite/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/lite/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/lite/index.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/lite/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/klona/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/async/index.browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/async/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/async/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/async/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/async/index.native.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/async/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/bin/nanoid.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/index.browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/index.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/index.prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/nanoid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/non-secure/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/non-secure/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/non-secure/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/non-secure/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/url-alphabet/index.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/url-alphabet/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/nanoid/url-alphabet/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/.jscs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/.jshintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/src/parse-srcset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/tests/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/tests/intern.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/parse-srcset/tests/unit/ps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/at-rule.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/at-rule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/comment.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/container.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/css-syntax-error.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/css-syntax-error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/declaration.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/declaration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/fromJSON.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/fromJSON.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/input.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/lazy-result.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/lazy-result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/list.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/map-generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/node.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/parse.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/postcss.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/postcss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/postcss.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/previous-map.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/previous-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/processor.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/processor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/result.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/root.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/root.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/rule.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/rule.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/stringifier.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/stringify.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/stringify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/symbols.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/terminal-highlight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/tokenize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/warn-once.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/warning.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/lib/warning.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/postcss/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/sanitize-html/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/sanitize-html/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/sanitize-html/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/sanitize-html/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/sanitize-html/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/dist/source-map.debug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/dist/source-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/dist/source-map.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/dist/source-map.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/array-set.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/base64-vlq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/base64.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/binary-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/mapping-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/quick-sort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/source-map-consumer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/source-map-generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/source-node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/lib/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/source-map.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/node_modules/source-map/source-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/remain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/reprac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/security.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/curri1. Node.JS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/fileread.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/mpart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/muse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/readdir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Node/sample.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/CallBack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/Number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/OOP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/comparison.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/function.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/loop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/object2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/Syntax/sync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/coding.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/JS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/create" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/createtest3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/data/hi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/lib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/main_prac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/remain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/reprac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri1_2. Node.JS&amp;MySQL/security.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,7 +106,8 @@
       <workItem from="1613962670418" duration="3990000" />
       <workItem from="1614141176579" duration="5325000" />
       <workItem from="1614148938392" duration="1045000" />
-      <workItem from="1614151508771" duration="309000" />
+      <workItem from="1614151508771" duration="1050000" />
+      <workItem from="1614152709183" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
       <created>1613385988715</created>
@@ -539,7 +298,28 @@
       <option name="project" value="LOCAL" />
       <updated>1614151816090</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="게시판 구현">
+      <created>1614151870943</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1614151870943</updated>
+    </task>
+    <task id="LOCAL-00029" summary="JS 문법 간단히">
+      <created>1614151931235</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1614151931235</updated>
+    </task>
+    <task id="LOCAL-00030" summary=".">
+      <created>1614151969360</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1614151969360</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +334,6 @@
     <MESSAGE value="함수" />
     <MESSAGE value="Create 구현 - Post 형식 활용" />
     <MESSAGE value="연습" />
-    <MESSAGE value="JS 문법 간단히" />
     <MESSAGE value="CRUD 구현 수업용" />
     <MESSAGE value="게시판 CRUD 구현 복습용" />
     <MESSAGE value="CRUD 기능 구현(수업)" />
@@ -564,9 +343,11 @@
     <MESSAGE value="최종 홈페이지 구현, 연습 요망" />
     <MESSAGE value="this,함수는 값" />
     <MESSAGE value="3회차 복습, 자체 함수 모듈화 제거" />
-    <MESSAGE value="." />
     <MESSAGE value="웹페이지 파일 추가/삭제 데이터" />
     <MESSAGE value="NODE 기능 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="NODE 기능 테스트" />
+    <MESSAGE value="게시판 구현" />
+    <MESSAGE value="JS 문법 간단히" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
