@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="this,함수는 값">
-      <change afterPath="$PROJECT_DIR$/curri1. Node.JS/reprac.js" afterDir="false" />
+    <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,8 @@
       <workItem from="1613795280036" duration="30000" />
       <workItem from="1613902381990" duration="25000" />
       <workItem from="1613962670418" duration="3990000" />
-      <workItem from="1614141176579" duration="4275000" />
+      <workItem from="1614141176579" duration="5325000" />
+      <workItem from="1614148938392" duration="1045000" />
     </task>
     <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
       <created>1613385988715</created>
@@ -215,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613756025427</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary=".">
+      <created>1614145699753</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614145699753</updated>
+    </task>
+    <task id="LOCAL-00023" summary="3회차 복습, 자체 함수 모듈화 제거">
+      <created>1614145730765</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614145730765</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,13 +247,14 @@
     <MESSAGE value="JS 문법 간단히" />
     <MESSAGE value="CRUD 구현 수업용" />
     <MESSAGE value="게시판 CRUD 구현 복습용" />
-    <MESSAGE value="." />
     <MESSAGE value="CRUD 기능 구현(수업)" />
     <MESSAGE value="CRUD 기능 직접 구현(복습 2회차용)" />
     <MESSAGE value="객체 모듈 처리" />
     <MESSAGE value="모듈 연습 export-require" />
     <MESSAGE value="최종 홈페이지 구현, 연습 요망" />
     <MESSAGE value="this,함수는 값" />
-    <option name="LAST_COMMIT_MESSAGE" value="this,함수는 값" />
+    <MESSAGE value="." />
+    <MESSAGE value="3회차 복습, 자체 함수 모듈화 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="3회차 복습, 자체 함수 모듈화 제거" />
   </component>
 </project>
