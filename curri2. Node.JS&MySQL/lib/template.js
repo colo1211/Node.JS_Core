@@ -1,5 +1,5 @@
 module.exports = {
-  HTML:function(title, list, body, control){
+  HTML(title, list, body, control){
     return `
     <!doctype html>
     <html>
@@ -15,11 +15,13 @@ module.exports = {
     </body>
     </html>
     `;
-  },list:function(filelist){
+  },
+
+  list(topics){
     var list = '<ul>';
     var i = 0;
-    while(i < filelist.length){
-      list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
+    while(i < topics.length){
+      list = list + `<li><a href="/?id=${topics[i].id}">${topics[i].title}</a></li>`;
       i = i + 1;
     }
     list = list+'</ul>';
