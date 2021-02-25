@@ -2,41 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/coding.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/data/HTML" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/example.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/lib/template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/fileread.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/mpart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/muse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/readdir.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/nodejs/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/password.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/Number.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/array-loop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/boolean.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/callback.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/comparison.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/conditional.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/function2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/loop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/object.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/object2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/object3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/program1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/program2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/string.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/sync.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/variable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/node.js-mysql-1/syntax/variable2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/example.sql" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/example.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/lib/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/lib/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1oVD0Ikesq0AuI1OnpOHZcBSJbs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,7 +45,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="15.7.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TIL/Node.JS_Core/Node.JS&amp;MySql" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,6 +53,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -102,7 +82,14 @@
       <workItem from="1614141176579" duration="5325000" />
       <workItem from="1614148938392" duration="1045000" />
       <workItem from="1614151508771" duration="1050000" />
-      <workItem from="1614152709183" duration="952000" />
+      <workItem from="1614152709183" duration="1436000" />
+      <workItem from="1614222228013" duration="402000" />
+      <workItem from="1614222650995" duration="2290000" />
+      <workItem from="1614225560078" duration="464000" />
+      <workItem from="1614226044741" duration="1993000" />
+      <workItem from="1614228488631" duration="476000" />
+      <workItem from="1614229003163" duration="382000" />
+      <workItem from="1614229404310" duration="13849000" />
     </task>
     <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
       <created>1613385988715</created>
@@ -321,7 +308,28 @@
       <option name="project" value="LOCAL" />
       <updated>1614154447067</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Curri2. Node.js &amp; MySQL">
+      <created>1614154599403</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1614154599403</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Curri2. Node.js &amp; MySQL">
+      <created>1614154648115</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1614154648115</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Curri2. Node.js &amp; MySQL">
+      <created>1614154687435</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1614154687435</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +359,7 @@
     <MESSAGE value="JS 문법 간단히" />
     <MESSAGE value="." />
     <MESSAGE value="Curri1. Node.JS로 게시판(CRUD) 구현하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="Curri1. Node.JS로 게시판(CRUD) 구현하기" />
+    <MESSAGE value="Curri2. Node.js &amp; MySQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Curri2. Node.js &amp; MySQL" />
   </component>
 </project>
