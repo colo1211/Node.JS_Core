@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed3ea7a9-124d-4dbf-95b7-f718af49c4ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/example.sql" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/example.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/lib/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/lib/template.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL/package.json" afterDir="false" />
@@ -44,16 +42,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="15.7.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TIL/Node.JS_Core/Node.JS&amp;MySql" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.31" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/curri2. Node.JS&amp;MySQL" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -90,6 +89,10 @@
       <workItem from="1614228488631" duration="476000" />
       <workItem from="1614229003163" duration="382000" />
       <workItem from="1614229404310" duration="13849000" />
+      <workItem from="1614246517458" duration="1401000" />
+      <workItem from="1614248211137" duration="431000" />
+      <workItem from="1614248673479" duration="427000" />
+      <workItem from="1614249281424" duration="3228000" />
     </task>
     <task id="LOCAL-00001" summary="정적웹-&gt;동적웹">
       <created>1613385988715</created>
@@ -361,5 +364,9 @@
     <MESSAGE value="Curri1. Node.JS로 게시판(CRUD) 구현하기" />
     <MESSAGE value="Curri2. Node.js &amp; MySQL" />
     <option name="LAST_COMMIT_MESSAGE" value="Curri2. Node.js &amp; MySQL" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
