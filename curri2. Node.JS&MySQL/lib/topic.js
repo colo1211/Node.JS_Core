@@ -2,6 +2,7 @@
 var db = require('./db');
 var template = require('./template');
 var qs = require('querystring');
+var sanitizeHTML = require('sanitize-html');
 
 exports.home = function(request, response){
     db.query(`select * from topic`, function(error, topics){
@@ -20,16 +21,15 @@ exports.home = function(request, response){
 exports.description= function(request, response,queryData){
     db.query(`select * from topic`, function(error, topics){ // 리스트를 만들기 위해
         if (error) throw error;
-        db.query(`select * from topic left join author on author.id = topic.author_id where topic.id=?`,[queryData.id],function(error2, topic){ // 사용자의 입력에 대비하기 위한 코드: ? 이후 제대로된 값을 준다.
+        var query = db.query(`select * from topic left join author on author.id = topic.author_id where topic.id=${db.escape(queryData.id)}`,function(error2, topic){
             if(error2) throw error2;
-            console.log(topic);
             var title = topic[0].title; // topic[0]은 현재 배열 위치를 가르킨다.
             var description = topic[0].description;
             var list = template.list(topics); // 리스트 띄우기 위한 topics
             var HTML = template.HTML(title, list,
-                `<h2>${title}</h2>
-                               ${description}
-                                <p>by ${topic[0].name}</p>`,
+                `<h2>${sanitizeHTML(title)}</h2>
+                               ${sanitizeHTML(description)}
+                                <p>by ${sanitizeHTML(topic[0].name)}</p>`,
                 `
                         <a href="/create">create</a>
                         <a href="/update?id=${queryData.id}">update</a> 
@@ -52,7 +52,7 @@ exports.create=function(request, response){
             // authors 에는 저자 목록이 저장된다.
             var title = 'Create';
             var list = template.list(topics);
-            var HTML = template.HTML(title, list,
+            var HTML = template.HTML(sanitizeHTML(title), list,
                 `<form action="process_create" method="post">
                        <p><input type="text" name="title" placeholder="title"></p>
                        <p><textarea name = "description" placeholder="contents"></textarea></p>    

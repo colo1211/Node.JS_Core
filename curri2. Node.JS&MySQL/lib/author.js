@@ -2,11 +2,12 @@ var template = require('./template');
 var db = require('./db');
 var qs = require('querystring');
 var url = require('url');
+var sanitizeHTML = require('sanitize-html');
+
 exports.home= function(request, response){
     db.query(`select * from topic`, function(error, topics){
         db.query (`select * from author`, function (error, authors){
             var title = 'Welcome';
-            var description = 'Hello, Node.js';
             var list = template.list(topics);
             var HTML = template.HTML(title, list,
                 `${template.authorTable(authors)}
@@ -55,8 +56,7 @@ exports.update = function (request, response){
             var _url = request.url;
             var queryData = url.parse(_url, true).query;
             db.query(`select * from author where id = ?`,[queryData.id],function(error, author){
-                var title = 'Welcome';
-                var description = 'Hello, Node.js';
+                var title = 'author';
                 var list = template.list(topics);
                 var HTML = template.HTML(title, list,
                     `${template.authorTable(authors)}
@@ -92,7 +92,7 @@ exports.process_update = function(request,response){
     request.on('end', function(error){
         if (error) throw error;
         var post = qs.parse(body);
-        console.log(post);
+        // console.log(post);
         db.query('UPDATE author SET name=?, profile=? WHERE author.id=?',
             [post.title, post.description, post.id],
             function(error,result){
