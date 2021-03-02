@@ -18,7 +18,7 @@ exports.home = function(request, response){
     })
 }
 
-exports.description= function(request, response,queryData){
+exports.description= function(request, response, queryData){
     db.query(`select * from topic`, function(error, topics){ // 리스트를 만들기 위해
         if (error) throw error;
         var query = db.query(`select * from topic left join author on author.id = topic.author_id where topic.id=${db.escape(queryData.id)}`,function(error2, topic){

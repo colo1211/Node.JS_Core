@@ -32,7 +32,7 @@ var app = http.createServer(function(request,response){
     }else if (pathname ==='/author/update_process'){
         author.process_update(request,response);
     }
-    else if (pathname ==="/author/delete_process"){
+    else if (pathname ==="/author/process_delete"){
         author.process_delete(request,response,queryData);
     }
     else {
