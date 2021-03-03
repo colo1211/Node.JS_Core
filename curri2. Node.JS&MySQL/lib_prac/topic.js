@@ -22,7 +22,7 @@ exports.details= function(request,response){
             var title = topic[0].title;
             var description = topic[0].description;
             var list = template.listMaker(topics);
-            var templateHTML = template.templateMaker(title, list, `${description}`,
+            var templateHTML = template.templateMaker(title, list, `${description} <p>by ${topic[0].name}</p>`,
                 `<a href='/create'>create</a>
                         <a href="/update?id=${queryData.id}">update</a>
                         <form action="process_delete" method="post">
@@ -37,18 +37,22 @@ exports.details= function(request,response){
 
 exports.create=function(request, response){
     db.query(`SELECT * FROM topic`, function(error, topics){
-        var list = template.listMaker(topics);
-        var title = 'Create';
-        var templateHTML = template.templateMaker(title, list, `
+        db.query(`SELECT * FROM author`, function(error, authors){
+            var list = template.listMaker(topics);
+            var title = 'Create';
+            var templateHTML = template.templateMaker(title, list, `
                 <form action="/process_create" method="post">
                 <p><input type="text" name="title" placeholder="title"></p>
                 <p><textarea name = "description" placeholder="contents"></textarea></p>
+                <p>${template.authorSelect(authors)}</p> 
                 <input type="submit" value="생성">
                 </form>
+               
             `,'');
-        response.writeHead(200);
-        response.end(templateHTML);
-    })
+            response.writeHead(200);
+            response.end(templateHTML);
+        })
+        })
 }
 
 exports.process_create=function(request,response){
@@ -76,25 +80,28 @@ exports.update = function(request,response){
     db.query(`SELECT * FROM topic`, function(error, topics){
         var list = template.listMaker(topics);
         db.query(`SELECT * FROM topic WHERE id=?`,[queryData.id], function(error, topic){
-            var title = topic[0].title;
-            var list = template.listMaker(topics);
-            var templateHTML = template.templateMaker(title, list, `
+            db.query(`SELECT * FROM author`, function (error, authors){
+                var title = topic[0].title;
+                var list = template.listMaker(topics);
+                var templateHTML = template.templateMaker(title, list, `
                     <form action="/process_update" method="post">
                     <input type="hidden" name="id" value="${topic[0].id}">
                     <p><input type="text" name="title" placeholder="title" value="${topic[0].title}"></p>
                     <p>
                     <textarea name="description" placeholder="description">${topic[0].description}</textarea>
                     </p>
+                    ${template.authorSelect(authors,topic[0].author_id)}
                     <p>
                     <input type="submit">
                     </p>
                     </form>
                 `,` <a href="/create">create</a>
                            <a href="/update?id=${topic[0].id}">update</a>`);
-            response.writeHead(200);
-            response.end(templateHTML);
+                response.writeHead(200);
+                response.end(templateHTML);
+            })
         })
-    })
+            })
 }
 
 exports.process_update=function(request,response){
