@@ -80,6 +80,7 @@ app.post(`/create_process`,function(request,response){
     });
 })
 
+// Update Form
 app.get (`/update/:pageId`, function(request, response){
     fs.readdir('./data', function(error, filelist){
         var filteredId = path.parse(request.params.pageId).base;
@@ -106,6 +107,7 @@ app.get (`/update/:pageId`, function(request, response){
     });
 })
 
+// Update Form에서 전달한 내용 전달받기
 app.post(`/update_process`,function(request, response){
     var body = '';
     request.on('data', function(data){
@@ -123,6 +125,8 @@ app.post(`/update_process`,function(request, response){
         });
     });
 })
+
+// Delete
 app.post (`/delete_process`, function(request, response){
     var body = '';
     request.on('data', function(data){
