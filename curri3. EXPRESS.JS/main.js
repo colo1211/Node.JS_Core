@@ -5,51 +5,64 @@ var fs = require('fs');
 var template = require('./lib/template');
 var path = require('path');
 var sanitizeHtml = require('sanitize-html');
-var qs = require('querystring');
+var bodyParser = require('body-parser');
+var compression = require('compression');
+
+app.use(bodyParser.urlencoded({ extended: false })); // body-parser 미들웨어 리턴, post 방식으로 데이터를 가져오는데 사용하는 문장
+app.use(compression()); // compression 미들웨어 리턴, app use를 통해서 장착
+app.get('*',function(request, response,next){
+   fs.readdir(`./data`,function(error, fileList){
+        request.list= fileList;
+        next(); // next에는 그 다음에 호출되어야 하는 미들 웨어가 담김 -> 미들웨어를 실행시키는 역할
+   });
+});
+app.use(express.static('public'));
 
 // 메인 페이지
 app.get('/', function (request, response){
-    fs.readdir('./data', function(error, fileList){
         var title = 'Welcome';
         var description = 'Hello, Node.js';
-        var list = template.list(fileList);
+        var list = template.list(request.list);
         var html = template.HTML(title, list,
-            `<h2>${title}</h2>${description}`,
+            `<h2>${title}</h2>${description}
+                  <img src="/images/hello.jpg" style="width:300px; display:block; margin:10px;">
+            `,
             `<a href="/create">create</a>`
         );
         response.send(html);
-    });
 })
 // 상세 페이지
-app.get(`/page/:pageId`, function(request, response){
-    fs.readdir('./data', function(error, filelist){
+app.get(`/page/:pageId`, function(request, response,next){
         var filteredId = path.parse(request.params.pageId).base;
         fs.readFile(`data/${filteredId}`, 'utf8', function(err, description){
-            var title = request.params.pageId;
-            var sanitizedTitle = sanitizeHtml(title);
-            var sanitizedDescription = sanitizeHtml(description, {
-                allowedTags:['h1']
-            });
-            var list = template.list(filelist);
-            var html = template.HTML(sanitizedTitle, list,
-                `<h2>${sanitizedTitle}</h2>${sanitizedDescription}`,
-                ` <a href="/create">create</a>
+            if (err) {
+                next(err);
+            }else {
+                var title = request.params.pageId;
+                var sanitizedTitle = sanitizeHtml(title);
+                var sanitizedDescription = sanitizeHtml(description, {
+                    allowedTags: ['h1']
+                });
+                var list = template.list(request.list);
+                var html = template.HTML(sanitizedTitle, list,
+                    `<h2>${sanitizedTitle}</h2>${sanitizedDescription}`,
+                    ` <a href="/create">create</a>
                 <a href="/update/${sanitizedTitle}">update</a>
                 <form action="/delete_process" method="post">
                   <input type="hidden" name="id" value="${sanitizedTitle}">
                   <input type="submit" value="delete">
                 </form>`
-            );
-            response.send(html);
+                );
+                response.send(html);
+            }
         });
-    });
+
 })
 
 // Create
 app.get(`/create`, function(request,response){
-    fs.readdir('./data', function(error, fileList){
         var title = 'WEB - create';
-        var list = template.list(fileList);
+        var list = template.list(request.list);
         var html = template.HTML(title, list, `
           <form action="/create_process" method="post">
             <p><input type="text" name="title" placeholder="title"></p>
@@ -62,31 +75,24 @@ app.get(`/create`, function(request,response){
           </form>
         `, '');
         response.send(html);
-    });
 })
+
 // Create - Post 방식으로 받기
 app.post(`/create_process`,function(request,response){
-    var body = '';
-    request.on('data', function(data){
-        body = body + data;
-    });
-    request.on('end', function(){
-        var post = qs.parse(body);
+        var post = request.body;
         var title = post.title;
         var description = post.description;
         fs.writeFile(`data/${title}`, description, 'utf8', function(err){
             response.redirect(`/page/${title}`);
         })
-    });
 })
 
 // Update Form
 app.get (`/update/:pageId`, function(request, response){
-    fs.readdir('./data', function(error, filelist){
         var filteredId = path.parse(request.params.pageId).base;
         fs.readFile(`data/${filteredId}`, 'utf8', function(err, description){
             var title = request.params.pageId;
-            var list = template.list(filelist);
+            var list = template.list(request.list);
             var html = template.HTML(title, list,
                 `
             <form action="/update_process" method="post">
@@ -103,18 +109,13 @@ app.get (`/update/:pageId`, function(request, response){
                 `<a href="/create">create</a> <a href="/update/${title}">update</a>`
             );
             response.send(html);
-        });
     });
 })
 
 // Update Form에서 전달한 내용 전달받기
 app.post(`/update_process`,function(request, response){
-    var body = '';
-    request.on('data', function(data){
-        body = body + data;
-    });
-    request.on('end', function(){
-        var post = qs.parse(body);
+        console.log(`update: ${request.list}`);
+        var post = request.body;
         var id = post.id;
         var title = post.title;
         var description = post.description;
@@ -123,23 +124,25 @@ app.post(`/update_process`,function(request, response){
                 response.redirect(`/page/${title}`);
             })
         });
-    });
 })
 
 // Delete
 app.post (`/delete_process`, function(request, response){
-    var body = '';
-    request.on('data', function(data){
-        body = body + data;
-    });
-    request.on('end', function(){
-        var post = qs.parse(body);
+        var post = request.body;
         var id = post.id;
         var filteredId = path.parse(id).base;
         fs.unlink(`data/${filteredId}`, function(error){
             response.redirect('/');
         })
-    });
 })
+
+app.use(function(request, response, next) {
+    response.status(404).send('Sorry cant find that!');
+});
+
+app.use(function(err, req, res, next) {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
 
 app.listen(port);
