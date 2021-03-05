@@ -135,11 +135,11 @@ app.post (`/delete_process`, function(request, response){
             response.redirect('/');
         })
 })
-
+// 아예 목록에 있지도 않은 URL을 입력했을 때
 app.use(function(request, response, next) {
-    response.status(404).send('Sorry cant find that!');
+    response.status(404).send('Not Found');
 });
-
+// 목록에는 있지만, CSS3 처럼 한 글자가 틀렸을 때
 app.use(function(err, req, res, next) {
     console.error(err.stack);
     res.status(500).send('Something broke!');
