@@ -114,7 +114,6 @@ app.get (`/update/:pageId`, function(request, response){
 
 // Update Form에서 전달한 내용 전달받기
 app.post(`/update_process`,function(request, response){
-        console.log(`update: ${request.list}`);
         var post = request.body;
         var id = post.id;
         var title = post.title;
