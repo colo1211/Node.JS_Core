@@ -136,11 +136,11 @@ app.post (`/delete_process`, function(request, response){
 })
 
 
-// 아예 목록에 있지도 않은 URL을 입력했을 때
+// localhost:3000/1e21321312 와 같이 터무니 없는 URL을 입력
 app.use(function(request, response, next) {
     response.status(404).send('Not Found');
 });
-// 목록에는 있지만, CSS3 처럼 한 글자가 틀렸을 때
+// localhost:3000/page/CSS#@!#3312 과 같이 디렉토리에 없는 URL을 입력했을 때
 app.use(function(err, request, response, next) {
     console.error(err.stack);
     response.status(500).send('Something broke!');
